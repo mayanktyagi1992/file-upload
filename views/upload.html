@@ -1,0 +1,13 @@
+  <form name="myForm">
+    <fieldset>
+      <br>Photo:
+      <input type="file" ngf-select data-ng-model="picFile" name="file"    
+             accept="image/*" ngf-max-size="2MB" required
+             ngf-model-invalid="errorFile">
+      
+      <br>
+      <button ng-click="uploadPic(picFile)">click to upload</button>
+    </fieldset>
+    <br>
+  </form>
+
